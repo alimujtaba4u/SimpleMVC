@@ -5,3 +5,19 @@ To execute just make your url upto the web path
 e.g http://localhost/mvc/web
 
 for more info go to http://mvc.bugplayers.com/
+
+/*    some features     */
+Features List of this Framework
+
+    Pure MVC Framework
+    Support multiple apps (e.g backend, frontend)
+    Power full template system (e.g partials,components etc) Click here http://mvc.bugplayers.com/
+    Simple Routing (e.g module/action.html?querystring=something)
+    Config Menagement
+    ORM Support (e.g outlet,Doctrine, propel)
+    PHP Backward compatibiliy
+    No need to include file just put your file into lib
+    This framework is similer to symfony
+    Made for simple small web applications
+
+That not the end its just the beginning ! More Outstanding features will come soon !
