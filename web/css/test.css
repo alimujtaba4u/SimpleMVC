@@ -1,0 +1,53 @@
+/* 
+    Document   : test
+    Created on : Sep 3, 2011, 9:11:38 PM
+    Author     : Ali Mujtaba
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body{
+/*    background-color: #BA9F79;*/
+    background-color: #E0DBD3;
+    border: black dotted 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    background-color: #958E98;
+    padding: 10px;
+    border: black dotted 2px;
+}
+
+.content{
+    background-color: #958E98;
+    margin: 10px;
+    border: black dotted 2px;
+}
+
+.footer{
+    background-color: #BFBFBF;
+    padding: 10px;
+    border: black dotted 2px;
+}
+.box{
+    background-color: #BFBFBF;
+    border: 2px dotted black;
+    height: 100px;
+    margin: 25px 50px 25px 150px;
+    width: 200px;
+}
+.box2{
+    background-color: #BFBFBF;
+    border: 2px dotted black;
+    direction: ltr;
+    height: 100px;
+    margin: 25px 150px 25px 50px;
+    width: 200px;
+}

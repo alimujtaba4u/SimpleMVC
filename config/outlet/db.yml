@@ -1,0 +1,7 @@
+connection:
+  dsn: 'mysql:host=localhost;dbname=test'
+  username: root
+  password: ''
+  dialect: mysql
+classes:
+  User: { table: users, props: { ID: [id, int, { pk: true, autoIncrement: true }], Username: [username, varchar] } }
