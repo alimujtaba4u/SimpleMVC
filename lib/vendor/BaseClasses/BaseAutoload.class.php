@@ -74,11 +74,9 @@ class BaseAutoload {
     }
 
     public function getPosiblePath() {
-        return $this->posiblePaths; 
+        return $this->posiblePaths;
     }
-    
+
     private $posiblePaths = array();
 
 }
-
-?>

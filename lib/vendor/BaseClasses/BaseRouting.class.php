@@ -25,42 +25,40 @@ class BaseRouting {
         $url = preg_replace('/' . addcslashes($dir_path, '/') . '/', '', $url, 1);
         $url = preg_replace('/' . addcslashes($script, '/') . '?/', '', $url, 1, self::$includeScriptName);
         $part = explode('?', $url);
-        $root = explode('/', str_replace('.html','', $part[0]));
-        
-        if(count($root) != 2 || empty ($root[0]) ){
-            return array('home','index');
+        $root = explode('/', str_replace('.html', '', $part[0]));
+
+        if (count($root) != 2 || empty($root[0])) {
+            return array('home', 'index');
         }
-        if(empty($root[1])){
+        if (empty($root[1])) {
             $root[1] = 'index';
         }
-        return $root;     
+        return $root;
     }
-    
-    public static function getScriptName(){
+
+    public static function getScriptName() {
         return self::$scriptName;
     }
 
-    public static function generateUrl($route,$params = array()){
+    public static function generateUrl($route, $params = array()) {
         $part = explode('?', $route);
-        $route = str_replace('.html','', $part[0]);
-        
-        if(isset($part[1])){
-            parse_str($part[1],$qs);
-            $params = array_merge($params,$qs);
+        $route = str_replace('.html', '', $part[0]);
+
+        if (isset($part[1])) {
+            parse_str($part[1], $qs);
+            $params = array_merge($params, $qs);
         }
-        if(count($params) != 0){
-            $params = '?'.http_build_query($params);
-        }else{
+        if (count($params) != 0) {
+            $params = '?' . http_build_query($params);
+        } else {
             $params = '';
         }
-        
+
         $script = $_SERVER['SCRIPT_NAME'];
-        if(!self::$includeScriptName){
-            $script = str_replace('/'.self::$scriptName,'',$_SERVER['SCRIPT_NAME']);
+        if (!self::$includeScriptName) {
+            $script = str_replace('/' . self::$scriptName, '', $_SERVER['SCRIPT_NAME']);
         }
-        return $script.'/'.$route.'.html'.$params;
+        return $script . '/' . $route . '.html' . $params;
     }
 
 }
-
-?>

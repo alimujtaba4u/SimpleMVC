@@ -34,7 +34,7 @@ class BaseConfiguration {
         $path = array(
             'root_dir' => $root_dir,
             'lib_dir' => $root_dir . DIRECTORY_SEPARATOR . 'lib',
-            'base_lib_dir' => realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'lib' ,
+            'base_lib_dir' => realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'lib',
             'apps_dir' => $root_dir . DIRECTORY_SEPARATOR . 'apps',
             'model_dir' => $root_dir . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'model'
         );
@@ -68,5 +68,3 @@ class BaseConfiguration {
     }
 
 }
-
-?>

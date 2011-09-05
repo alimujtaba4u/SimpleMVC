@@ -2,6 +2,11 @@
     <head>
         <?php include_javascript('test.js'); ?>
         <?php include_stylesheet('test.css'); ?>
+        <?php 
+            if(has_slot('title')){
+                echo get_slot('title');
+            }
+        ?>
     </head>
     <body>
         <h3>Body</h3>

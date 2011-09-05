@@ -1,3 +1,6 @@
+<?php start_slot('title'); ?>
+<title>Features list !</title>
+<?php end_slot(); ?>
 <div style="text-align: left;padding: 10px">
 <div>Features List of this Framework</div>
 <ul>

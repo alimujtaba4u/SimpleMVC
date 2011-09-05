@@ -1,3 +1,6 @@
+<?php start_slot('title'); ?>
+<title>MVC Template System Owerview !</title>
+<?php end_slot(); ?>
 <h3>Content </h3>
 <div>
     <?php echo $text; ?>
